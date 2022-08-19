@@ -1,0 +1,4 @@
+//missing CameraParameters symbol referenced by
+//libmedia.so
+void _ZN7android11AudioSystem23setAudioSessionCallbackEPFviRNS_2spINS_16AudioSessionInfoEEEbE() {}
+void _ZN7android11AudioSystem17listAudioSessionsE19audio_stream_type_tRNS_6VectorINS_2spINS_16AudioSessionInfoEEEEE() {}
