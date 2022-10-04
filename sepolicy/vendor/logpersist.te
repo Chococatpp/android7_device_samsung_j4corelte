@@ -1,0 +1,2 @@
+allow logpersist logpersist:capability { dac_override };
+allow logpersist logpersist:capability { dac_read_search };

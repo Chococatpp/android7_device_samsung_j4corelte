@@ -1,0 +1,8 @@
+allow rild csc_prop:file { read open getattr };
+allow rild proc_net:file write;
+allow rild vendor_data_file:dir write;
+allow rild vendor_data_file:file { read write getattr };
+allow rild default_prop:property_service set;
+allow rild system_data_file:dir { read write getattr };
+allow rild debugfs_trace_marker:file { getattr };
+allow rild default_android_hwservice:hwservice_manager { add find };

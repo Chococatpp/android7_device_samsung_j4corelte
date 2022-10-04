@@ -1,0 +1,1 @@
+allow hal_drm_widevine debugfs_trace_marker:file getattr;

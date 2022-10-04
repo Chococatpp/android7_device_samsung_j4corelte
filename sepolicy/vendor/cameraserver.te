@@ -1,0 +1,4 @@
+allow cameraserver init:binder call;
+allow cameraserver init:binder transfer;
+
+allow cameraserver debugfs_trace_marker:file getattr;

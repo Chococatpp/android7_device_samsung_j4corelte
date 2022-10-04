@@ -1,0 +1,1 @@
+allow netd debugfs_trace_marker:file getattr;

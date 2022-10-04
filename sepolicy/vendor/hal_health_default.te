@@ -1,0 +1,16 @@
+allow hal_health_default sysfs:file read;
+allow hal_health_default sysfs:file open;
+allow hal_health_default sysfs:file getattr;
+
+allow hal_health_default app_efs_file:dir search;
+allow hal_health_default app_efs_file:file read;
+allow hal_health_default app_efs_file:file open;
+allow hal_health_default app_efs_file:file getattr;
+allow hal_health_default app_efs_file:file write;
+allow hal_health_default app_efs_file:file setattr;
+
+allow hal_health_default efs_file:dir search;
+
+allow hal_health_default debugfs_trace_marker:file getattr;
+
+allow hal_health_default default_android_hwservice:hwservice_manager { add find};

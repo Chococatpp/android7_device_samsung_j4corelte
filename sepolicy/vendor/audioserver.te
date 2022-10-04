@@ -1,0 +1,1 @@
+allow audioserver debugfs_trace_marker:file getattr;

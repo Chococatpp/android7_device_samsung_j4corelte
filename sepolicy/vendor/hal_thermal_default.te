@@ -1,0 +1,1 @@
+allow hal_thermal_default debugfs_trace_marker:file getattr;
