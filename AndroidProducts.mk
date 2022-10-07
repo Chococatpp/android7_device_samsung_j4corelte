@@ -10,4 +10,4 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     lineage_j2y18lte-user \
     lineage_j2y18lte-userdebug \
-    lineage_j2y18lte-en
+    lineage_j2y18lte-eng

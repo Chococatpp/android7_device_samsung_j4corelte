@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/samsung/j2y18lte
 
+TARGET_KERNEL_CLANG_COMPILE := false
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
@@ -144,7 +146,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
 TARGET_KERNEL_CONFIG := j2y18lte_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Low ram
 TARGET_HAS_LOW_RAM := true
