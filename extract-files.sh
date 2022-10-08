@@ -49,6 +49,17 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+    
+    system/lib/libdatasource.so)
+            "${PATCHELF}" --add-needed "libdatasource_shim.so" "${2}"
+        ;;
+    esac
+}
+
+if [ -z "${ONLY_TARGET}" ]; then
+    
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 

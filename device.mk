@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 	
 PRODUCT_PACKAGES += \
     libbase_shim
+    libdatasource_shim
     
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-impl \
