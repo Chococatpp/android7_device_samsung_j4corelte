@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 	
 PRODUCT_PACKAGES += \
     libbase_shim \
+    libcameraservice_shim \
     libdatasource_shim
     
 PRODUCT_PACKAGES += \

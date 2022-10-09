@@ -55,6 +55,9 @@ function blob_fixup() {
     system/lib/libdatasource.so)
             "${PATCHELF}" --add-needed "libdatasource_shim.so" "${2}"
         ;;
+    system/lib/libcameraservice.so)
+            "${PATCHELF}" --add-needed "libcameraservice_shim.so" "${2}"
+        ;;
     esac
 }
 
