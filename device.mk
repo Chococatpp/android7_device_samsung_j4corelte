@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
     Snap
 	
 PRODUCT_PACKAGES += \
-    libbase_shim
+    libbase_shim \
     libdatasource_shim
     
 PRODUCT_PACKAGES += \
