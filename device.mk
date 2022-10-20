@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libcameraservice_shim \
-    libdatasource_shim
+    libdatasource_shim \
+    camera.msm8937_shim
     
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-impl \

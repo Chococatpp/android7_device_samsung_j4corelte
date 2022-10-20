@@ -197,7 +197,9 @@ SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libsec-ril.so|libshims_ril.so \
     /system/vendor/lib/libsec-ril-dsds.so|libshims_ril.so \
-    /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so
+    /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so \
+    /system/lib/libcameraservice.so|libcameraservice_shim.so \
+    /system/lib/libdatasource.so:libdatasource_shim.so
 
 # SurfaceFlinger
 TARGET_USE_QCOM_SURFACEFLINGER := true

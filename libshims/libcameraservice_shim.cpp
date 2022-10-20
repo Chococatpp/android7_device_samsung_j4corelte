@@ -1,3 +1,3 @@
 extern "C" {
-   void _ZN7android19ICameraServiceProxy11asInterfaceERKNS_2spINS_7IBinderEEE() {}
+   void _ZN7android15BatteryNotifier16noteFlashlightOnERKNS_7String8Ei() {}
 }
