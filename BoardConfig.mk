@@ -136,7 +136,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_samsung_msm8917
 TARGET_RECOVERY_DEVICE_MODULES := libinit_samsung_msm8917
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive loop.max_part=7
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -144,8 +144,12 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dt.img
 TARGET_KERNEL_CONFIG := j2y18lte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/j2y18lte
+
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Low ram
