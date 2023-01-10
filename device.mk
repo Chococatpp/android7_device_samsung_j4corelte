@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-impl \
-    android.hardware.camera.provider@2.5-service \
+    android.hardware.camera.provider@2.5-service.msm8917 \
     android.hardware.camera.device@3.2 \
     android.hardware.camera.device@3.3 \
     android.hardware.camera.device@3.4 \
