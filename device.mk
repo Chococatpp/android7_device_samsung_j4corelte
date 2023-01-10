@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl
 	
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
@@ -218,10 +219,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
     
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
     android.hardware.gnss@2.0-impl
 
 PRODUCT_PACKAGES += \
     libwifi-hal-ctrl
+
+# Vendor Mixed hals
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.health@2.1.vendor \
+    android.hardware.light@2.0.vendor \
+    android.hardware.power@1.3.vendor \
+    libgui_vendor \
+    android.hardware.radio@1.0.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.drm@1.4.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor \
+    libunwindstack.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
