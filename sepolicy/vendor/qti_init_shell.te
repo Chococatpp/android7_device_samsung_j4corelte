@@ -6,4 +6,9 @@ allow qti_init_shell default_prop:property_service set;
 allow qti_init_shell ctl_start_prop:property_service set;
 allow qti_init_shell sysfs:file write;
 
+allow qti_init_shell proc_sched:file { open write };
+allow qti_init_shell self:capability dac_override;
+allow qti_init_shell sysfs:file setattr;
+allow qti_init_shell sysfs_msm_power:file setattr;
+
 set_prop(qti_init_shell, ctl_default_prop)
