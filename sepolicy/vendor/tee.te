@@ -15,6 +15,7 @@ allow tee kmsg_device:blk_file rw_file_perms;
 allow tee properties_device:blk_file rw_file_perms;
 
 allow tee persist_file:lnk_file r_file_perms;
+allow tee persist_file:dir { search };
 
 allow tee proc:file r_file_perms;
 

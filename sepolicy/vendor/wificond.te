@@ -1,1 +1,2 @@
 allow wificond debugfs_trace_marker:file getattr;
+allow wificond vendor_file:file { read };

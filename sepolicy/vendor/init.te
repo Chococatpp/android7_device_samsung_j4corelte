@@ -18,3 +18,4 @@ allow init proc_hostname:file getattr;
 allow init proc_overcommit_memory:file getattr;
 allow init proc_min_free_order_shift:file getattr;
 allow init proc_dirty:file getattr;
+allow init persist_file:dir { mounton };

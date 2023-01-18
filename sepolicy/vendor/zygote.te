@@ -1,2 +1,2 @@
 allow zygote exported_camera_prop:file { open read getattr };
-allow zygote vendor_file:file { getattr read };
+allow zygote vendor_file:file { getattr read open execute };
