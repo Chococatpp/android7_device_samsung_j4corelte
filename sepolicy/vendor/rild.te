@@ -6,3 +6,5 @@ allow rild default_prop:property_service set;
 allow rild system_data_file:dir { read write getattr };
 allow rild debugfs_trace_marker:file { getattr };
 allow rild default_android_hwservice:hwservice_manager { add find };
+allow rild app_efs_file:file { getattr open read };
+allow rild system_data_file:file { open read };

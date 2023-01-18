@@ -38,4 +38,4 @@ ro.config.hw_quickpoweron=true
 ro.ril.sensor.sleep.control=1
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
-ro.compcache.default=0 
+ro.compcache.default=0

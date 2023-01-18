@@ -14,3 +14,5 @@ allow hal_health_default efs_file:dir search;
 allow hal_health_default debugfs_trace_marker:file getattr;
 
 allow hal_health_default default_android_hwservice:hwservice_manager { add find};
+
+allow hal_health_default battery_efs_file:dir { search };

@@ -1,2 +1,4 @@
 allow fsck block_device:blk_file read;
-allow fsck block_device:blk_file { read write };
+allow fsck block_device:blk_file { read write open };
+allow fsck vendor_file:file { read };
+allow fsck tmpfs:lnk_file { read };

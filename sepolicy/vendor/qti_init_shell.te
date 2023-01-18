@@ -5,6 +5,7 @@ allow qti_init_shell sensors_persist_file:dir create_dir_perms;
 allow qti_init_shell default_prop:property_service set;
 allow qti_init_shell ctl_start_prop:property_service set;
 allow qti_init_shell sysfs:file write;
+allow qti_init_shell sysfs_net:file write;
 
 allow qti_init_shell proc_sched:file { open write };
 allow qti_init_shell self:capability dac_override;
