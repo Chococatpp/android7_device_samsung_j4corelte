@@ -1,1 +1,2 @@
 allow vold vendor_file:file { read getattr write };
+allow vold sysfs_mmc_host:file { write };
