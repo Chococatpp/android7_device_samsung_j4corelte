@@ -1,0 +1,1 @@
+allow installd vendor_file:file { read getattr };
