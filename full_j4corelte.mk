@@ -18,12 +18,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from rolex device
-$(call inherit-product, device/samsung/j2y18lte/device.mk)
+$(call inherit-product, device/samsung/j4corelte/device.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Samsung
-PRODUCT_DEVICE := j2y18lte
-PRODUCT_NAME := full_j2y18lte
+PRODUCT_DEVICE := j4corelte
+PRODUCT_NAME := full_j4corelte
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-J250F
+PRODUCT_MODEL := J410x
 PRODUCT_MANUFACTURER := Samsung
